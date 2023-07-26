@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almere - Toeristische Attracties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href=
+"https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" 
+rel="stylesheet">
+    <style>
+        .h1 {
+    font-family: 'Heebo', sans-serif;    
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;  
+        }
+
+        header {
+            background-image: url('AlmereCity.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e66594;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column,
+        .right-column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left-column {
+            flex: 2;
+        }
+
+        .right-column {
+            flex: 9;
+            background-color: #f2f2f2;
+        }
+
+        .article {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .article img {
+            width: 100px;
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .article img {
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welkom in Almere!</h1>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <h2>Feitjes over Almere:</h2>
+            <ul>
+                <li>Almere is de jongste stad van Nederland.</li>
+                <li>De stad heeft meer dan 200 kilometer fietspaden.</li>
+                <li>Almere heeft het grootste stadsbos van Europa.</li>
+                <li>Het Weerwater is het grootste meer in Almere.</li>
+                <li>Er zijn meer dan 4400 hectare aan natuurgebieden in Almere.</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <div class="article">
+                <h2>De Oostvaardersplassen</h2>
+                <p>
+                    De Oostvaardersplassen is een bijzonder natuurgebied in Almere. Het is een uitgestrekt moerasgebied
+                    waar veel verschillende vogels en dieren leven. Het is een ideale plek voor vogelliefhebbers en
+                    natuurfotografen.
+                </p>
+                <img src="Oostvaardersplassen.jpeg" alt="Oostvaardersplassen">
+            </div>
+            <div class="article">
+                <h2>Het Aviodrome</h2>
+                <p>
+                    Het Aviodrome is een luchtvaartmuseum in Almere waar je alles kunt leren over de geschiedenis van de
+                    luchtvaart. Het heeft een grote collectie vliegtuigen en interactieve tentoonstellingen voor jong en
+                    oud.
+                </p>
+                <img src="Aviodrome.jpeg" alt="Aviodrome">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 - Almere</p>
+    </footer>
+</body>
+
+</html>
